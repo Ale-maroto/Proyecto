@@ -2,7 +2,7 @@
 
 Este proyecto implementa un sistema de control híbrido para un brazo robótico de 4 grados de libertad. Utiliza una **FPGA** para la generación precisa de señales PWM y el control de trayectoria en tiempo real, y un **ESP32** como puente de comunicación inalámbrica para control remoto vía Wi-Fi/Bluetooth.
 
-## 🎯 Objetivos
+## Objetivos
 
 ### Objetivo General
 Desarrollar un sistema embebido de alto rendimiento que permita el control coordinado y remoto de un brazo robótico 4-DOF, integrando lógica de hardware dedicada y conectividad IoT.
@@ -29,7 +29,7 @@ Simulación: ModelSim para la lógica digital.
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 El sistema utiliza una estructura de control jerárquica:
 
