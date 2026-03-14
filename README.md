@@ -13,7 +13,7 @@ Diseñar e implementar un controlador robusto en lenguaje de descripción de har
 * **Optimización de Recursos:** Minimizar el uso de celdas lógicas y registros dentro de la FPGA.
 * **Interfaz de Usuario:** Integrar un sistema de control externo (switches o comunicación serial) para la manipulación del brazo.
 
----
+
 
 ##  Arquitectura del Sistema (Diagrama a Bloques)
 
