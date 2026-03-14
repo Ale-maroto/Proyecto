@@ -2,7 +2,7 @@
 
 Este proyecto consiste en el diseño y desarrollo de un sistema de control digital implementado en hardware (FPGA) para gestionar el movimiento sincronizado de un brazo robótico de 4 grados de libertad (4-DOF). El enfoque principal es lograr trayectorias fluidas mediante la generación precisa de señales PWM y lógica de control coordinada.
 
-## 🎯 Objetivos
+##  Objetivos
 
 ### Objetivo General
 Diseñar e implementar un controlador robusto en lenguaje de descripción de hardware (HDL) que permita la manipulación precisa de un brazo robótico 4-DOF, garantizando la coordinación de sus articulaciones en tiempo real.
@@ -15,7 +15,7 @@ Diseñar e implementar un controlador robusto en lenguaje de descripción de har
 
 ---
 
-## 🏗️ Arquitectura del Sistema (Diagrama a Bloques)
+##  Arquitectura del Sistema (Diagrama a Bloques)
 
 El diseño se basa en una arquitectura modular para facilitar el mantenimiento y la escalabilidad:
 
