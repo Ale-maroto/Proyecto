@@ -14,15 +14,18 @@ Desarrollar un sistema embebido de alto rendimiento que permita el control coord
 * **Sincronización:** Asegurar que los 4 ejes se muevan de forma coordinada para realizar trayectorias suaves.
 
 ##Lista de Materiales
+
 ###Hardware
+
 FPGA: Intel Cyclone IV / Xilinx Artix-7.
 MCU: ESP32 DevKit V1.
-Actuadores: 4 Servomotores (2x MG996R, 2x SG90).
-Estructura: Kit de Brazo Robótico 4-DOF (Acrílico o Aluminio).
+Actuadores: 4 Servomotores (2x MG996R, 2x SG90). 
+Estructura: Kit de Brazo Robótico 4-DOF (Acrílico o Aluminio). 
 Alimentación: Fuente externa 5V @ 4A (Tierra común con FPGA y ESP32).
 Otros: Convertidor de niveles lógicos (si la FPGA no es tolerante a 3.3V), cables jumper y protoboard.
 
 ###Software
+
 FPGA: Quartus Prime / Vivado (HDL: VHDL/Verilog).
 ESP32: Arduino IDE / PlatformIO (C++).
 Simulación: ModelSim para la lógica digital.
