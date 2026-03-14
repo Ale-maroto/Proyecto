@@ -1,0 +1,57 @@
+1. Título del Proyecto
+Controlador de Movimiento Coordinado para Brazo Robótico 4-DOF en FPGA
+
+2. Descripción del circuito
+El circuito es un procesador de señales PWM diseñado para controlar la estructura de acrílico de 4 servomotores MG995. 
+A diferencia de un microcontrolador que genera las señales una tras otra, la FPGA Tang Nano 9K genera las 4 señales en paralelo real, lo que elimina vibraciones (jitter) en los motores. 
+Se utiliza para tareas de manipulación de objetos pequeños y es un ejemplo base de mecatrónica industrial donde la velocidad de respuesta es crítica.
+
+3. Objetivos
+  Objetivo General:
+Diseñar un controlador hardware en FPGA que gestione la posición de 4 articulaciones de forma simultánea y precisa para realizar trayectorias predefinidas.
+  Objetivos Específicos:
+Implementar módulos generadores de PWM (Pulse Width Modulation) con resolución de microsegundos.
+Diseñar una unidad de control de trayectoria (FSM) que coordine los ángulos de cada motor.
+Integrar una interfaz de usuario (switches o comunicación serial) para el control manual o automático.
+Optimizar el uso de recursos lógicos dentro de la FPGA.
+
+4. Arquitectura de Hardware
+El sistema se divide en módulos lógicos dentro de la FPGA que se comunican con los actuadores externos.
+  Lista de Componentes Hardware
+FPGA: (Ej. Cyclone IV, Artix-7 o DE10-Lite).
+Actuadores: 4 Servomotores (MG996R o SG90).
+Estructura: Brazo robótico 4-DOF (impreso en 3D o acrílico).
+Alimentación: Fuente externa de 5V/3A (para no dañar la FPGA).
+Interfaz: Push buttons, Switches o Módulo Bluetooth HC-05.
+
+  Lista de Software
+IDE de Desarrollo: Quartus II / Vivado.
+Lenguaje de Descripción de Hardware: VHDL o Verilog.
+Simulación: ModelSim o GTKWave.
+Cálculo Cinemático: Python o MATLAB (opcional para generar tablas de ángulos).
+
+5. Estructura del Repositorio
+Siguiendo las recomendaciones de Eminus, organiza tus carpetas así:
+├── README.md           # Documentación principal
+├── .gitignore          # Archivos que Git debe ignorar (logs de compilación)
+├── docs/               # Datasheets de servos y manual de usuario
+├── rtl/                # Código fuente VHDL/Verilog (.v, .vhd)
+├── sim/                # Testbenches para simulación
+├── constraints/        # Archivos de asignación de pines (.qsf o .xdc)
+└── assets/             # Imágenes y diagramas del proyecto
+
+6. Roles del Equipo y Cronograma
+  Roles Sugeridos
+Arquitecto de RTL: Responsable de los módulos PWM y divisores de reloj.
+Ingeniero de Control: Diseño de la Máquina de Estados Finitos (FSM) y lógica de movimiento.
+Integrador de Hardware: Conexiones físicas, gestión de energía y asignación de pines.
+QA & Documentación: Pruebas de simulación y mantenimiento del repositorio.
+
+  Cronograma de Metas
+Etapa	            Meta	                                          Responsable	              Entrega
+I	      Estructura de repo y módulo PWM verificado	            Todo el equipo	          Semana 1-2
+II	 Control de múltiples servos y FSM básica	               Arquitecto/Control	          Semana 3-4
+III	Integración física y pruebas de trayectoria	                Integrador	              Semana 4-5
+IV	Optimización y entrega final	                             Todo el equipo	            Semana 5-6
+
+
